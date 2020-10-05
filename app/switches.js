@@ -27,7 +27,7 @@ function daysPosition(day, offset) {
             case 'friday':
                 return 6
                 break
-            case 'friday':
+            case 'saturday':
                 return 7
                 break
             default:
@@ -126,5 +126,15 @@ function golfScore(score, par) {
 let count = 0
 
 function cardCounter(card) {
-
+    switch (card) {
+        case '2', '3', '4', '5', '6':
+            return count++ 
+            break;
+        case '7', '8', '9':
+            return count
+            break;
+        case '10', 'J', 'Q', 'K', 'A':
+            return count--
+            break
+    }
 }
