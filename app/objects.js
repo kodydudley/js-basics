@@ -31,7 +31,8 @@ let cat = {
 // "Pickles" to "Kevin".Then use either dot or bracket notation to return 
 // the value of the name property.
 function renameCat() {
-  // your code inside here
+  cat.name = "Kevin";
+  return cat.name
 }
 
 // Create a function that uses dot or bracket notation to create a property 
@@ -39,7 +40,7 @@ function renameCat() {
 // Then return the value of the color property.
 
 function colorTheCat() {
-  // your code inside here
+  
 }
 
 // Delete the whiskers property off of the cat object. You may use either dot or bracket notation.
